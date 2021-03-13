@@ -22,7 +22,9 @@ const Header = () => {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Nav className='ml-auto'>
-              <Button variant='danger mr-3'>Add Student</Button>
+              <LinkContainer to='/add-student'>
+                <Button variant='danger mr-3'>Add Student</Button>
+              </LinkContainer>
               <Nav.Link className='avater-img py-0 pr-0'>
                 <Image
                   src='https://picsum.photos/80/80'
