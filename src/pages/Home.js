@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import Student from '../components/layout/Student'
+import Student from '../components/Student'
 
 const Home = () => {
   return (
