@@ -25,3 +25,12 @@ img {
   top: 5px;
   z-index: 3;
 }
+
+.loaderWrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 100px);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

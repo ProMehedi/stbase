@@ -2,6 +2,7 @@ import React from 'react'
 import { Container, Row } from 'react-bootstrap'
 import { useSelector } from 'react-redux'
 import { useFirestoreConnect } from 'react-redux-firebase'
+import { SyncLoader } from 'react-spinners'
 import Student from '../components/Student'
 
 const Home = () => {
@@ -12,7 +13,14 @@ const Home = () => {
   const firestore = useSelector((state) => state.firestore)
   const { students } = firestore.ordered
 
-  console.log(students)
+  if (!students) {
+    return (
+      <div className='loaderWrapper'>
+        <h4 className='mb-4 text-white'>Loading Students...</h4>
+        <SyncLoader size={15} color='red' />
+      </div>
+    )
+  }
 
   return (
     <Container className='py-4'>
