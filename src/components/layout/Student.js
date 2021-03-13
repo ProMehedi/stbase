@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, Card, Col } from 'react-bootstrap'
+import { LinkContainer } from 'react-router-bootstrap'
 
 const Student = () => {
   return (
@@ -11,18 +12,13 @@ const Student = () => {
         </Button>
         <Card.Body>
           <Card.Title className='border-bottom pb-2'>Najmin Hasan</Card.Title>
-          <p className='border-bottom mb-1 pb-1'>
-            <strong>Email:</strong> name@example.com
-          </p>
-          <p className='border-bottom mb-1 pb-1'>
-            <strong>Class:</strong> 12
-          </p>
-          <p className='border-bottom mb-1 pb-1'>
-            <strong>Grade:</strong> 3.90
-          </p>
           <div className='profileAction d-flex justify-content-between mt-3'>
-            <Button variant='info btn-sm'>View Profile</Button>
-            <Button variant='warning btn-sm'>Edit Profile</Button>
+            <LinkContainer to='/student/1'>
+              <Button variant='info btn-sm'>View Profile</Button>
+            </LinkContainer>
+            <LinkContainer to='/student/edit'>
+              <Button variant='warning btn-sm'>Edit Profile</Button>
+            </LinkContainer>
           </div>
         </Card.Body>
       </Card>
