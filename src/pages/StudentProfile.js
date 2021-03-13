@@ -15,7 +15,7 @@ const StudentProfile = () => {
               <Row>
                 <Col md={4}>
                   <Image
-                    src='https://picsum.photos/300/300'
+                    src='https://i.pravatar.cc/300/300'
                     className='border'
                   />
                 </Col>

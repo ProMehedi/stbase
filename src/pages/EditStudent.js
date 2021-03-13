@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Button, Card, Col, Container, Form, Row } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 
-const AddStudent = () => {
+const EditStudent = () => {
   const [fName, setFName] = useState('')
   const [lName, setLName] = useState('')
   const [email, setEmail] = useState('')
@@ -37,7 +37,7 @@ const AddStudent = () => {
           </LinkContainer>
           <Card className='mb-3'>
             <Card.Body>
-              <Card.Title>Add New Student</Card.Title>
+              <Card.Title>Edit Student</Card.Title>
               <Form onSubmit={submitHandler}>
                 <Form.Group>
                   <Form.Row>
@@ -145,4 +145,4 @@ const AddStudent = () => {
   )
 }
 
-export default AddStudent
+export default EditStudent

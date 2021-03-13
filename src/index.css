@@ -11,6 +11,10 @@ img {
   max-width: 100%;
 }
 
+.form-label {
+  display: block;
+}
+
 .avater-img img {
   max-width: 40px;
 }
