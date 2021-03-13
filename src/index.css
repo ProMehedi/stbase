@@ -10,3 +10,10 @@ body {
 .avater-img img {
   max-width: 40px;
 }
+
+.delProfileBtn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  z-index: 3;
+}
